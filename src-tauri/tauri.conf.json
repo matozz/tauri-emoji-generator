@@ -8,7 +8,7 @@
   },
   "package": {
     "productName": "Emoji Maker",
-    "version": "0.0.0"
+    "version": "0.0.1"
   },
   "tauri": {
     "allowlist": {
@@ -26,8 +26,8 @@
     },
     "bundle": {
       "active": true,
-      "category": "DeveloperTool",
-      "copyright": "",
+      "category": "Entertainment",
+      "copyright": "Matozz & Diu",
       "deb": {
         "depends": []
       },
@@ -39,7 +39,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.matoz.emojimaker",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -63,6 +63,7 @@
     "updater": {
       "active": false
     },
+    "macOSPrivateApi": true,
     "windows": [
       {
         "fullscreen": false,
@@ -70,8 +71,8 @@
         "resizable": true,
         "title": "Emoji Maker",
         "width": 800,
-        "titleBarStyle": "Transparent",
-        "hiddenTitle": true
+        "hiddenTitle": true,
+        "transparent": true
       }
     ]
   }

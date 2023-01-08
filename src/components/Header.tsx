@@ -10,10 +10,10 @@ const Header: ParentComponent = () => {
         {/* <h1 font-extrabold tracking-wide text-neutral-800 dark:text-neutral-200>Fluent Emoji Maker</h1> */}
         <div
           inline-flex justify-center items-center p-1
-          text-neutral-600 dark:text-neutral-200 op-50
+          text-neutral-800 dark:text-neutral-200 op-80
           hover="op-100"
-          cursor-pointer transition-opacity
-          onClick={toggleStoreScheme}
+          transition-opacity
+        // onClick={toggleStoreScheme}
         >
           {
             showDark() ? <i text-2xl i-carbon:moon /> : <i text-2xl i-carbon:sun />

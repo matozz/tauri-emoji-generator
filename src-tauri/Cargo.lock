@@ -528,12 +528,13 @@ checksum = "4ef6b89e5b37196644d8796de5268852ff179b44e96276cf4290264843743bb7"
 
 [[package]]
 name = "emoji_maker"
-version = "0.0.0"
+version = "0.0.1"
 dependencies = [
  "serde",
  "serde_json",
  "tauri",
  "tauri-build",
+ "window-vibrancy",
 ]
 
 [[package]]
@@ -3048,6 +3049,17 @@ name = "winapi-x86_64-pc-windows-gnu"
 version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "712e227841d057c1ee1cd2fb22fa7e5a5461ae8e48fa2ca79ec42cfc1931183f"
+
+[[package]]
+name = "window-vibrancy"
+version = "0.3.2"
+source = "git+https://github.com/tauri-apps/window-vibrancy#f3afebba173af4a7212d3bfe0f04c03fc256964f"
+dependencies = [
+ "cocoa",
+ "objc",
+ "raw-window-handle",
+ "windows-sys",
+]
 
 [[package]]
 name = "windows"

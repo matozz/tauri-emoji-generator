@@ -166,9 +166,8 @@ const App: Component = () => {
       <main
         flex="~ col" items-center
         h-full
-        mx-auto bg-white rounded-lg bg-op-80
+        mx-auto
         shadow="2xl black/10"
-        dark:bg-dark
         p-4
       >
         <Header />
@@ -177,8 +176,9 @@ const App: Component = () => {
         </div>
         <div flex h-12 gap-2 mt-8>
           <div
-            flex items-center justify-center w-12 rounded-full
-            bg-neutral-100 dark:bg-neutral-600
+            flex items-center justify-center w-12 h-12 rounded-full
+            bg-neutral-300 dark:bg-neutral-600
+            bg-op-40 dark:bg-op-40
             text-black dark:text-white
             cursor-pointer transition-colors
             hover="bg-violet-200 dark:bg-violet-400"
@@ -188,8 +188,8 @@ const App: Component = () => {
           </div>
           <div
             inline-flex px-3 items-center gap-1 rounded-full
-            min-h-10
-            bg-neutral-100 dark:bg-neutral-600
+            bg-op-40 dark:bg-op-40
+            bg-neutral-300 dark:bg-neutral-600
             text-black dark:text-white
             cursor-pointer transition-colors
             hover="bg-violet-200 dark:bg-violet-400"
@@ -200,8 +200,9 @@ const App: Component = () => {
           </div>
           <div
             inline-flex px-3 items-center gap-1 rounded-full
-            bg-neutral-100 dark:bg-neutral-600
+            bg-neutral-300 dark:bg-neutral-600
             text-black dark:text-white
+            bg-op-40 dark:bg-op-40
             cursor-pointer transition-colors
             hover="bg-violet-200 dark:bg-violet-400"
             onClick={() => toSVGBlob().then((blob) => exportImage(blob, 'svg'))}
@@ -217,9 +218,10 @@ const App: Component = () => {
                 <div
                   flex items-center justify-center
                   h-16 w-16 rounded-lg
+                  bg-op-40 dark:bg-op-40
                   cursor-pointer transition-colors
-                  hover="bg-violet-200 dark:bg-violet-200"
-                  class={selectedTab() === item ? 'bg-violet-200 dark:bg-violet-200' : 'bg-neutral-100 dark:bg-neutral-600'}
+                  hover="bg-violet-200 dark:bg-violet-400"
+                  class={selectedTab() === item ? 'bg-violet-300 dark:bg-violet-400' : 'bg-neutral-300 dark:bg-neutral-600'}
                   onClick={() => setSelectedTab(item)}
                 >
                   <Show

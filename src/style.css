@@ -3,15 +3,15 @@
 }
 
 html {
-  height: calc(100% - 32px);
-  margin: 16px 20px;
-  background-color: #f5f3ff;
+  height: 100%;
+  /* margin: 16px 20px; */
+  /* background-color: #f5f3ff; */
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
     sans-serif;
 }
 
 html.dark {
-  background-color: #333333;
+  /* background-color: #333333; */
   color-scheme: dark;
 }
 
