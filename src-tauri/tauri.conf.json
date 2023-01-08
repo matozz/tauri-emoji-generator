@@ -7,7 +7,7 @@
     "withGlobalTauri": false
   },
   "package": {
-    "productName": "tauri-app",
+    "productName": "Emoji Maker",
     "version": "0.0.0"
   },
   "tauri": {
@@ -16,6 +16,12 @@
       "shell": {
         "all": false,
         "open": true
+      },
+      "dialog": {
+        "save": true
+      },
+      "fs": {
+        "writeFile": true
       }
     },
     "bundle": {
@@ -62,8 +68,10 @@
         "fullscreen": false,
         "height": 600,
         "resizable": true,
-        "title": "tauri-app",
-        "width": 800
+        "title": "Emoji Maker",
+        "width": 800,
+        "titleBarStyle": "Transparent",
+        "hiddenTitle": true
       }
     ]
   }
